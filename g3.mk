@@ -100,6 +100,10 @@ PRODUCT_PACKAGES += \
     memtrack.msm8974 \
     liboverlay
 
+# Doze mode
+PRODUCT_PACKAGES += \
+    G3Doze
+
 # Filesystem
 PRODUCT_PACKAGES += \
     e2fsck
