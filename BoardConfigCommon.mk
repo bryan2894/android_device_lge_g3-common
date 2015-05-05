@@ -71,6 +71,16 @@ COMMON_GLOBAL_CFLAGS += -DBOARD_CHARGING_CMDLINE_NAME='"androidboot.mode"' -DBOA
 # CMHW
 BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/cmhw/
 
+# Dex
+ifeq ($(HOST_OS),linux)
+  ifeq ($(TARGET_BUILD_VARIANT),user)
+    ifeq ($(WITH_DEXPREOPT),)
+      WITH_DEXPREOPT := true
+    endif
+  endif
+endif
+DONT_DEXPREOPT_PREBUILTS := true
+
 # Display
 BOARD_EGL_CFG := $(LOCAL_PATH)/configs/egl.cfg
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
