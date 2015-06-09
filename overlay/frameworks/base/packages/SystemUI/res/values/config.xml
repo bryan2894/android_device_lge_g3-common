@@ -35,4 +35,8 @@
     <bool name="doze_display_state_supported">false</bool>
     <bool name="doze_pulse_on_pick_up">true</bool>
     <integer name="doze_shake_accelerometer_threshold">10</integer>
+
+    <!-- Whether recents should use hardware layers for its taskviews. This flag can be enabled
+    for devices where the java drawing of round rects may be slow -->
+    <bool name="config_recents_use_hardware_layers">true</bool>
 </resources>
