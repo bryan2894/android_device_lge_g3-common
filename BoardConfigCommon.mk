@@ -79,7 +79,6 @@ endif
 DONT_DEXPREOPT_PREBUILTS := true
 
 # Display
-BOARD_EGL_CFG := $(LOCAL_PATH)/configs/egl.cfg
 TARGET_USES_C2D_COMPOSITION := true
 TARGET_USES_ION := true
 USE_OPENGL_RENDERER := true
