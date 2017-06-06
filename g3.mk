@@ -91,7 +91,6 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap \
     camera.msm8974
 
 # Display
